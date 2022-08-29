@@ -1,124 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--Додаємо шрифти-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Додаємо нормалізатор -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-
-    <!-- Додаємо стилі SASS -->
-    <link rel="stylesheet" href="./css/index.min.css" />
-
-    <title>IceCream</title>
-
-    <!-- Додаємо фавікон -->
-    <link rel="icon" type="image/x-icon" href="./images/icons/cone.ico" />
-
-
-
-   <!-- <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script> -->
-  </head>
-  <body>
-    <header>
-    </header>
-    <main>
-<!--Контакти компанії ICECREAM-->
-<section class="container contacts" id="contacts">
-    <h1 class="sr-only">Company contacts Icecream</h1>
-<!--Список карток-->
-    <ul class="contacts__card">
-      <li class="contacts__list">
-        <div class="contacts__cell">
-            <p class="contacts__cafe">CAFE</p>
-            <h2 class="contacts__city">Chicago</h2>
-            <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
-        <div class="contacts__cell">
-            <ul class="contacts__working-hours-list">
-              <li class="contacts__working-hours">
-                <h2 class="contacts__day">Monday - Friday</h2>
-                <p class="contacts__time">06:00 AM - 10:00 PM</p>
-              </li>
-              <li class="contacts__working-hours">
-                <h2 class="contacts__day">Saturday - Sunday</h2>
-                <p class="contacts__time">08:00 AM - 16:00 PM</p>
-              </li>
-            </ul>
-        </div>
-        <div class="contacts__cell">
-            <a href="#" class="contacts__tel-email">+61(0) 383 766 284</a>
-            <a href="#" class="contacts__tel-email">noreply@envato.com</a>
-        </div>
-      </li>
-      <li class="contacts__list">       
-        <div class="contacts__cell">
-        <p class="contacts__foodtruck">FOODTRUCK</p>
-        <h2 class="contacts__city">Los Angeles</h2>
-        <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-    </div>
-    <div class="contacts__cell">
-        <ul class="contacts__working-hours-list">
-          <li class="contacts__working-hours">
-            <h2 class="contacts__day">Monday - Friday</h2>
-            <p class="contacts__time">06:00 AM - 10:00 PM</p>
-          </li>
-          <li class="contacts__working-hours">
-            <h2 class="contacts__day">Saturday - Sunday</h2>
-            <p class="contacts__time">08:00 AM - 16:00 PM</p>
-          </li>
-        </ul>
-    </div>
-    <div class="contacts__cell">
-        <a href="#" class="contacts__tel-email">+61(0) 383 766 284</a>
-        <a href="#" class="contacts__tel-email">noreply@envato.com</a>
-    </div>
-</li>
-      <li class="contacts__list">
-        <div class="contacts__cell">
-            <p class="contacts__cafe">CAFE</p>
-            <h2 class="contacts__city">New York</h2>
-            <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </div>
-        <div class="contacts__cell">
-            <ul class="contacts__working-hours-list">
-              <li class="contacts__working-hours">
-                <h2 class="contacts__day">Monday - Friday</h2>
-                <p class="contacts__time">06:00 AM - 10:00 PM</p>
-              </li>
-              <li class="contacts__working-hours">
-                <h2 class="contacts__day">Saturday - Sunday</h2>
-                <p class="contacts__time">08:00 AM - 16:00 PM</p>
-              </li>
-            </ul>
-        </div>
-        <div class="contacts__cell">
-            <a href="#" class="contacts__tel-email">+61(0) 383 766 284</a>
-            <a href="#" class="contacts__tel-email">noreply@envato.com</a>
-        </div>
-      </li>
-    </ul>
-<!--Кнопка локації-->
-<button type="button"  class="contacts__button contacts__button-red">Our Locations</button>
-<!--Кнопка франшизи-->
-<button type="button"  class="contacts__button contacts__button-white">Franchise</button>
-</section>
-    </main>
-    <footer>
-    </footer>
-  </body>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег AREA</title>
+  <style type="text/css">
+   #title {
+    line-height: 0; /* Изменяем межстрочное расстояние */
+   }
+   #title img {
+    border: none; /* Убираем рамку вокруг изображения */
+   }
+  </style>
+ </head>
+ <body> 
+  <div id="title"><img src="images/ecctitle.png" width="640" height="158" 
+    alt="Детский образовательный центр"><br>
+   <img src="images/navigate.png" width="640" height="30" alt="Навигация по сайту"
+    usemap="#Navigation"></div>
+   <p><map id="Navigation" name="Navigation">
+    <area shape="poly" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация">
+    <area shape="poly" coords="210,24,233,0,329,0,307,24" href="activity.html" alt="Мероприятия">
+    <area shape="poly" coords="304,24,385,24,407,0,329,0" href="depart.html" alt="Отделения">
+    <area shape="poly" coords="384,24,449,24,473,0,406,0" href="techinfo.html" alt="Техническая информация">
+    <area shape="poly" coords="449,24,501,24,525,0,473,0" href="study.html" alt="Обучение">
+    <area shape="poly" coords="501,24,560,24,583,0,525,0" href="work.html" alt="Работа">
+    <area shape="poly" coords="560,24,615,24,639,0,585,0" href="misk.html" alt="Разное">
+   </map></p>
+ </body>
 </html>
